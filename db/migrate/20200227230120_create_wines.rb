@@ -4,11 +4,11 @@ class CreateWines < ActiveRecord::Migration[6.0]
       t.string :region
       t.string :notes
       t.string :grapeVariety
-      t.string :type
+      t.string :wineType
       t.integer :vintage
       t.string :label
       t.float :price
-      t.
+      t.string :image
 
       t.timestamps
     end
