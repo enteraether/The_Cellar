@@ -1,7 +1,6 @@
 const BASEURL = "http://localhost:3000/"
 const WINESURL = "http://localhost:3000/api/v1/wines"
 
-
 document.addEventListener('DOMContentLoaded', () => {
     
     loadBasePage()
