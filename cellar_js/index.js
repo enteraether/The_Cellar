@@ -1,12 +1,13 @@
-
 const BASEURL = "http://localhost:3000/"
 const WINESURL = "http://localhost:3000/api/v1/wines"
 
 
 document.addEventListener('DOMContentLoaded', () => {
-
+    
     loadBasePage()
+    console.log(wines)
     ////////
+    
 })
 
 function loadBasePage(){
@@ -20,27 +21,27 @@ function renderHomePage(wines){
     let whiteWineBox = document.createElement('div')
     whiteWineBox.className = "wWB"
     whiteWineBox.innerHTML = `
-    <h4></
+    <h4></h4>
     `
-
-   let winesByType =  wines.filter(function (e){
-       switch (wineType) {
-           case "Red":
-
-                console.log("red")
-               break;
-       
-            // case "White":
-            
-            // break;
-
-            // case "Sparkling":
-               
-            //     break;
-        
-            //  case "Rose":
-             
-            //  break;
-       }
-   })
 }
+
+let winesByType =  wines.filter(function (e){
+    switch (wineType) {
+        case "Red":
+
+             console.log("red")
+            break;
+    
+         // case "White":
+         
+         // break;
+
+         // case "Sparkling":
+            
+         //     break;
+     
+         //  case "Rose":
+          
+         //  break;
+    }
+})
