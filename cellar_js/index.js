@@ -12,23 +12,24 @@ document.addEventListener('DOMContentLoaded', () => {
 function loadBasePage(){
     fetch(WINESURL)
     .then(resp=>resp.json())
-    .then(sortWines)
+    .then(filterWines)
 }
 
-function sortWines(wines){
-    // const wineCollection = document.getElementById('welcome-image')
-    // let wineBox = document.createElement('div')
-    // wineBox.className = "wine-box"
-    // wineBox.innerHTML = `
-    // <h4>Whites</h4>
-    // `
+function filterWines(wines){
+    wines.filter(function(wine){
+    if (wine.wineType === 'Red'){
+        let 
+    }
+    })}
 
-   let winesByType =  wines.filter(function(wine){
-       switch (wine.wineType) {
+    let winesByType =  wines.filter(function(wine){  
+    switch (wine.wineType) {
            case "Red":
-
-                console.log(wine.wineType === 'Red')
-               break;
+               let redsList = (return wine.wineType === 'Red')
+               return redsList
+               debugger
+            //  listenForHmpgClicks(redsList)
+            break;
        
             // case "White":
             
